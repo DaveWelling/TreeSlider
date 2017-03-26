@@ -1,0 +1,68 @@
+.treeSlider {
+    display: flex;
+    flex-direction: row;
+}
+.item {
+    border-style: solid;
+    border-width: 1px;
+    transition: 
+    order 1s,
+    opacity 1s,
+    flex-grow 1s,
+    height 1s, 
+    width 1s, 
+    left 1s, 
+    margin-top 1s, 
+    line-height 1s, 
+    background-color 1s;
+}
+.positionHiddenLeft {
+    order: 1;
+    width: 1px;
+    flex-grow: 0;
+    opacity: 0;
+}
+.positionLeft {
+    order: 2;
+    width: 7em;
+    flex-grow: 10;
+    opacity: 1;
+}
+.positionFull {
+    order: 2;
+    width: 7em;
+    flex-grow: 20;
+    opacity: 1;
+}
+.positionRight {
+    order: 3;
+    width: 7em;
+    flex-grow: 10;
+    opacity: 1;
+}
+.positionHiddenRight {
+    order: 4;
+    width: 1px;
+    flex-grow: 0;
+    opacity: 0;
+}
+
+
+.arrow {
+    width: 60px;
+    height: 30px;
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 25%;
+    cursor: pointer;
+    font-size: 20px;
+    color: #228291;
+    line-height: 30px;
+    margin-top: 85px;
+    z-index: 1000;
+}
+/*
+.arrow-right {
+    left: 780px;
+}*/
